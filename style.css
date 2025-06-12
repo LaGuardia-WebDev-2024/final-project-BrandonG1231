@@ -1,5 +1,7 @@
 /* Styling Only Related To ALL Pages */
 
+@import url('https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&display=swap');
+
 body {
   padding-top: 30px;
   margin-left: 0px;
@@ -13,11 +15,13 @@ ul.nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: rgb(24, 59, 78);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
+  display: flex;
+  justify-content: space-between;
 }
 
 ul.nav li {
@@ -33,13 +37,9 @@ ul.nav li a {
 }
 
 ul.nav li a:hover:not(.active) {
-  background-color: yellow;
+  background-color: rgb(237, 207, 160);
 }
 
 ul.nav .active {
-  background-color: red;
-}
-
-h1 {
-  width: 100%;
+  background-color: rgb(221, 168, 83);
 }

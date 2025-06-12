@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Styling Only Related To THIS Page */
+      #website-heading {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #Website-Title{
+        font-family: "Chiron Sung HK", serif;
+        text-align: center;
+        margin: 30px;
+        border: 5px solid black;
+        padding: 10px 100px 10px 100px;
+      }
+
+      .Website-Images {
+        width: 200px;
+      }
+
+
+      /* Flip Card Maker ONLY */
+  .flip-card {        
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+            /*  Cooking Flip Card Color Card: */
+
+
+      #flip-card-cooking {
+        background-color: rgb(246, 198, 93);
+      }
+
+
+      #flip-card-cooking-back {
+        background-color: rgb(246, 198, 93);
+      }
+
+      #flip-card-8ball {
+      background-color: black;
+      }
+
+      #flip-card-8ball-back {
+        background-color: black;
+      }
+
+      #flip-card-8ball-text-desc {
+        color: white;
+      }
+
+      #flip-card-quiz {
+        background-color: white;
+      }
+
+
+      #flip-card-quiz-back {
+        background-color: white;
+      }
+
+      #flip-card-quiz-title {
+        color: red;
+      }
+
+      #flip-card-quiz-desc {
+        color: black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- ⬆⬆⬆⬆ Nav Bar -->
+      <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="websites.html">Websites</a></li>
+      <!-- Formerly About Me-->
+
+      <li><a href="games.html">Games</a></li>
+      <!-- Formerly Art-->
+
+      <li><a href="contact.html">Contact</a></li>
+      <!-- Formerly Resume-->
+
+    </ul>
+
+
+                          <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+
+    <h1 id="Website-Title">My Websites I’ve created:</h1>
+    
+      <div id="website-heading">
+
+                            <!--Flip Card Images -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" id="flip-card-cooking">
+      <img src="https://cdn.glitch.global/9ed36fb5-353f-412a-a1ea-e8c165d2bd62/Screenshot_12-6-2025_91712_laguardia-webdev-2024.github.io.jpeg?v=1749734292098" alt="Brandon's Recipe Book" style="width:300px;height:300px;object-fit: contain">
+    </div>
+    <div class="flip-card-back" id= "flip-card-cooking-back">
+      <h1>Brandon's Recipe Book</h1>
+      <a href="https://laguardia-webdev-2024.github.io/3-p-unit-3-project-BrandonG1231/" target="_blank"><p>https://laguardia-webdev-2024.github.io/3-p-unit-3-project-BrandonG1231/</p></a>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" id="flip-card-8ball">
+      <img src="https://cdn.glitch.global/9ed36fb5-353f-412a-a1ea-e8c165d2bd62/Screenshot_12-6-2025_18140_laguardia-webdev-2024.github.io.jpeg?v=1749766232167" alt="Magic 8 Ball" style="width:300px;height:300px;object-fit: contain">
+    </div>
+    <div class="flip-card-back" id="flip-card-8ball-back">
+      <h1>Magic 8 Ball</h1>
+     <a href="https://laguardia-webdev-2024.github.io/9-p-unit-9-project-BrandonG1231/" target="_blank"><p id="flip-card-8ball-text-desc">https://laguardia-webdev-2024.github.io/9-p-unit-9-project-BrandonG1231/</p></a>
+    </div>
+  </div>
+</div>
+
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" id="flip-card-quiz">
+      <img src="https://cdn.glitch.global/9ed36fb5-353f-412a-a1ea-e8c165d2bd62/Screenshot_12-6-2025_181656_laguardia-webdev-2024.github.io.jpeg?v=1749766640678" alt="Quiz About [Brandon]" style="width:300px;height:300px;object-fit: contain">
+    </div>
+
+    <div class="flip-card-back" id="flip-card-quiz-back">
+      <h1 id="flip-card-quiz-title">Quiz About [Brandon]</h1>
+     <a href="https://laguardia-webdev-2024.github.io/13-p-unit-13-project-BrandonG1231/" target="_blank"><p id="flip-card-quiz-desc">https://laguardia-webdev-2024.github.io/13-p-unit-13-project-BrandonG1231/</p></a>
+    </div>
+  </div>
+</div>
+    </div>
+  </body>
+</html>
